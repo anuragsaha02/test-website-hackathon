@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,600&display=swap');
 
 /* General Reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #e7e0ff; /* White background */
-    color: black; /* Default text color */
+    color: #361d7b; /* Default text color */
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -38,7 +37,7 @@ body {
 header {
     width: 100%;
     background-color: #361d7b; /* Purple header background */
-    padding: 13px 18px;
+    padding: 3px 18px;
     justify-content: space-between;
     align-items: center;
     
@@ -57,7 +56,7 @@ header {
 
 /* Logo Styling */
 .logo {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -73,14 +72,15 @@ header {
 .summary-title {
     font-size: 1.5rem;
     color: #361d7b;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
 .summary-title02 {
     font-size: 1.5rem;
     color: #361d7b;
-    margin-top: 29px;
+    margin-top: 34px;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -99,7 +99,8 @@ header {
     padding: 20px;
     text-align: center;
     flex: 1;
-    max-width: 19%;
+    max-width: 100%;
+    margin: 90 10px;
     box-shadow: 6px 5px 1px  #361d7b36;
     color: #d4c2f3; /* Dark purple text */
 }
@@ -125,6 +126,8 @@ header {
 .upload-section h2 {
     font-size: 1.4rem;
     color:  #361d7b;
+    margin-top: 10px;
+
     margin-bottom: 15px;
     text-align: center;
 }
@@ -148,7 +151,7 @@ header {
     margin-top: 1.5rem;
     background-color:  #361d7b;
     box-shadow: 6px 5px 1px  #361d7b6a;
-    padding: 15px 60px;
+    padding: 18px 60px;
     border-radius: 5px;
     color: white;
     cursor: pointer;
@@ -162,8 +165,8 @@ header {
 
 .button-upload button {
     background-color:  #361d7b;
-    box-shadow: 4px 4px 1px  #361d7b6a;
-    padding: 9px 20px;
+    box-shadow: 6px 5px 1px  #361d7b6a;
+    padding: 10px 60px;
     border-radius: 5px;
     color: white;
     cursor: pointer;
@@ -175,6 +178,17 @@ header {
     transform: scale(0.95); /* Slightly reduce size for click effect */
 }
 
+
+
+.info-button{
+    background-color: #361d7b;
+    box-shadow: 4px 4px 1px  #361d7b6a;
+    padding: 9px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
 .popup-message {
     position: fixed;
     bottom: 18px;
@@ -410,12 +424,12 @@ header {
 }
 
 .loader .dot {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color:  #ffffff;
     box-shadow: 4px 4px 1px  #361d7b;
     border-radius: 50%;
-    animation: bounce 1s infinite ease-in-out;
+    animation: bounce 0.4s infinite ease-in-out;
 }
 
 .loader .dot:nth-child(2) {
